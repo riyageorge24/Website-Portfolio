@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background section with title and resume button -->
+    <div class="background-image">
+        <div class="content">
+            <h1>My Internship Journey</h1>
+        </div>
+        <a href="https://drive.google.com/file/d/1hSj9CKzIeVMosm86I9toEhNMPyGwdaQj/view" class="resume-button" target="_blank">View my Resume!</a>
+    </div>
+
+    <!-- Internship Highlights Section -->
+    <section class="static">
+        <h2>Internship Highlights</h2>
+        <div class="polaroid-gallery">
+            <!-- Polaroid images with hover effect and click to enlarge -->
+            <div class="polaroid" onclick="openModal('h1.jpg')">
+                <img src="h1.jpg" alt="Highlight 1">
+                <div class="polaroid-text">Intern Summit 2024</div>
+            </div>
+            <div class="polaroid" onclick="openModal('h2.jpg')">
+                <img src="h2.jpg" alt="Highlight 2">
+                <div class="polaroid-text">Geared up with fall protection</div>
+            </div>
+            <div class="polaroid" onclick="openModal('h3.jpg')">
+                <img src="h3.jpg" alt="Highlight 3">
+                <div class="polaroid-text">First roof inspection!</div>
+            </div>
+            <div class="polaroid" onclick="openModal('h4.jpg')">
+                <img src="h4.jpg" alt="Highlight 4">
+                <div class="polaroid-text">Test lift day!</div>
+            </div>
+            <div class="polaroid" onclick="openModal('h5.jpg')">
+                <img src="h5.jpg" alt="Highlight 5">
+                <div class="polaroid-text">First lockout badge</div>
+            </div>
+            <div class="polaroid" onclick="openModal('h6.jpg')">
+                <img src="h6.jpg" alt="Highlight 6">
+                <div class="polaroid-text">First time driving the buggy!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Enlarged Image View -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <section class="projects">
+        <h2>Summer Internship Projects</h2>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 1: Anti-Bow Cassette Stand</h3>
+                <p><span class="label">Mill:</span> Galv 2</p>
+                <p><span class="label">Mentor:</span> Justin Speer</p>
+                <p><span class="label">Description:</span> Conducted on-field measurements and designed a stand for the Anti-Bow Cassettes to enhance safety and operational efficiency. Performed NASTRAN analysis to validate load-bearing capacity and strategically utilized existing inventory for material selection. The drawing created is in the approval process.</p>
+            </div>
+            <div class="project-image">
+                <img src="project1.jpg" alt="Anti-Bow Cassette Stand">
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 2: #4 Furnace Structural Repair</h3>
+                <p><span class="label">Mill:</span> HSM</p>
+                <p><span class="label">Mentor:</span> Curtis Coombs</p>
+                <p><span class="label">Description:</span> Calculated the center of gravity for an asymmetrical beam counterweight and verified its accuracy through simulation. Observed the entire project, interacting with riggers during the test lift and main lift phases. Ensured that calculations met CSI critical lift procedures and contributed to the installation of a 60 ft I-beam through effective teamwork and communication.</p>
+            </div>
+            <div class="project-image">
+                <img src="project2.jpg" alt="Furnace Structural Repair">
+            </div>
+        </div>
+            
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 3: FEA Analysis of Crane Hook</h3>
+                <p><span class="label">Mill:</span> Galv 2</p>
+                <p><span class="label">Mentor:</span> Justin Speer</p>
+                <p><span class="label">Description:</span> Modeled and conducted NASTRAN analysis on a crane hook to assess its structural capacity in compliance with ASME BTH-1-2023 and ASME B30.20-2021 standards. Ensured the hook can safely handle a specified load of 6000 pounds.</p>
+            </div>
+            <div class="project-image">
+                <img src="project3.jpg" alt="FEA Analysis of Crane Hook">
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 4: Forensic Evaluation and Modeling of Lifting Beam</h3>
+                <p><span class="label">Mill:</span> HSF</p>
+                <p><span class="label">Mentors:</span> Justin Speer, Curtis Coombs & Pedro</p>
+                <p><span class="label">Description:</span> Conducted a non-destructive forensic evaluation using ultrasound testing to verify wall thickness and assess the structural integrity of the lifting beam. Created an as-built model on Inventor. Used NASTRAN for finite element analysis to evaluate the beam's performance while ensuring safety.</p>
+            </div>
+            <div class="project-image">
+                <img src="project4.jpg" alt="Forensic Evaluation and Modeling of Lifting Beam">
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 5: Foundation Repair at Exit End of Build-up Line</h3>
+                <p><span class="label">Mill:</span> HSF</p>
+                <p><span class="label">Mentor:</span> Curtis Coombs</p>
+                <p><span class="label">Description:</span> Conducted on-field measurements and contributed to foundation repair work at the exit end of the build-up line to restore structural stability and ensure safe working conditions.</p>
+            </div>
+            <div class="project-image">
+                <img src="project5.jpg" alt="Foundation Repair at Exit End of Build-up Line">
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 6: Debander Robot Stairway and Platform</h3>
+                <p><span class="label">Mill:</span> HSF</p>
+                <p><span class="label">Mentor:</span> Curtis Coombs</p>
+                <p><span class="label">Description:</span> Designed on AutoCAD a new platform and staircase to facilitate the installation of the debander robot. Conducted field measurements, applied mill-requested changes, and provided structural calculations. Ensured compliance with building codes and OSHA requirements for platforms, stairs, handrails, guarding (fixed and removable), and fall protection tie-off points.</p>
+            </div>
+            <div class="project-image">
+                <img src="project6.jpg" alt="Debander Robot Stairway and Platform">
+            </div>
+        </div>
+    
+        <div class="project">
+            <div class="project-text">
+                <h3>Project 7: Baffle Sensor Cover</h3>
+                <p><span class="label">Mill:</span> Galv 2</p>
+                <p><span class="label">Mentor:</span> Justin Speer</p>
+                <p><span class="label">Description:</span> Modeled a cover for the baffle sensor to protect it from environmental damage and ensure accurate readings during operations. The drawing created is approved and on ENGWEB.</p>
+            </div>
+            <div class="project-image">
+                <img src="project7.jpg" alt="Baffle Sensor Cover">
+            </div>
+        </div>
+        
+    </section>  
+
+    <section class="contact">
+        <div class="contact-content">
+            <h1>Riya Sara George</h1>
+            <h2>Mechanical Engineer Intern</h2>
+            <h3>Stay in Touch!</h3>
+            <p>Email: <a href="mailto:riyasarageorge@gmail.com">riyasarageorge@gmail.com</a></p>
+            <p>Phone: 213-255-1397</p>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
